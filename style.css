@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+
+}
+
+
+
+header {
+    background: transparent;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+
+
+
+}
+
+
+
+.main_page {
+    background: linear-gradient(160deg, rgba(9, 8, 8, 0.555), rgba(0, 0, 0, 0.353)), url("photos/bg.jpg") no-repeat left center/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+
+}
+
+.menu a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 37px;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 0px 20px;
+    transition: font-size 0.6s ease-in-out;
+}
+
+.logo:hover {
+    color: orange;
+    cursor: pointer;
+    font-size: 45px;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    padding: 14px 0px;
+}
+
+.icon {
+    margin: 0px 15px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+}
+
+nav {
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 60px;
+    font-size: 20px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+
+.title {
+
+    display: inline;
+    /* position: absolute;
+    right: 2%;
+    bottom: 60%; */
+    font-size: 40px;
+    margin: 20px 40px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 60px;
+    position: relative;
+    animation: b-t 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+
+}
+
+.main_content h2 {
+    font-size: 80px;
+    animation: b-t 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+}
+
+.main_content h5{
+    font-size: 30px;
+    padding: 2px 20px;
+    animation: b-t 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+}
+
+@keyframes b-t {
+    0% {
+       bottom: -50%;
+        opacity: 0;
+    }
+
+    100% {
+       bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+
+/* Portfolio Page Started */
+
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+.portfolio h2 {
+    font-size: 36px;
+    color: white;
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: Top_Bottom 0.4s ease-in-out;
+    position: relative;
+}
+
+
+@keyframes Top_Bottom {
+    0% {
+        top: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.portfolio h2 span {
+    color: orange;
+}
+
+.portfolio_sections {
+    display: flex;
+    margin: 50px;
+
+}
+
+.portfolio_sections a {
+    padding-bottom: 90px;
+
+}
+
+.portfolio_sections .section {
+    border: 2px solid white;
+    height: 500px;
+    width: 400px;
+    margin: 0px 40px;
+    border-radius: 30px;
+    box-shadow: 2px 5px 17px 0px white;
+    position: relative;
+    animation: Bottom_Top 1s ease-in-out;
+
+
+}
+
+.section img {
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.section img:hover {
+    opacity: 0.4;
+    transform: scale(1.4);
+}
+
+
+.section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+}
+
+.section:before {
+    content: "";
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    z-index: 1;
+    bottom: 0px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+
+}
+
+.section:hover::before {
+    bottom: 200px;
+    opacity: 1;
+}
+
+.section1::before {
+    content: "Website Development";
+}
+
+.section2::before {
+    content: "E-commerce Solutions";
+}
+
+.section3::before {
+    content: "WordPress Customization";
+}
+
+
+
+/* About Page  */
+
+.biography_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.about_content {
+    padding: 150px;
+    width: 50%;
+
+}
+
+.about_content h2 {
+    font-size: 36px;
+
+}
+
+.about_content h2,
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: opacity 0.9s ease-in-out;
+}
+
+.about_content p {
+    margin-top: 30px;
+    line-height: 23px;
+
+}
+
+
+
+.about_image img {
+    height: 500px;
+    width: 700px;
+    animation: hChanges 0.5s ease-in-out;
+    border-radius: 10px 170px 30px 170px;
+
+}
+
+
+
+@keyframes hChanges {
+    0% {
+        height: 0px;
+    }
+
+    100% {
+        height: 500px;
+    }
+}
+
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+/* Contact page */
+
+.contact_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.contact_content {
+    padding: 150px;
+    width: 50%;
+    position: relative;
+    animation: Bottom_Top 0.6s ease;
+
+}
+
+@keyframes Bottom_Top {
+    0% {
+        bottom: -100px;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 0;
+        opacity: 1;
+    }
+}
+
+
+.contact_content h2 {
+    font-size: 58px;
+    color: white;
+    margin: 30px 0px;
+    letter-spacing: 2px;
+}
+
+.contact_content address {
+    margin: 40px 0px;
+    color: white;
+    font-style: normal;
+    font-family: arial;
+    letter-spacing: 2px;
+}
+
+.contact_content p {
+    color: white;
+    font-family: 22px;
+    font-family: arial;
+    margin: 5px 0px;
+    letter-spacing: 6px;
+
+}
+
+
+
+
+
+/* footer{
+    background-color: orange;
+    color: rgb(255, 255, 255);
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   padding: 10px;
+   font-family: arial;
+   width: 100%;
+   font-size: 13px;
+
+} */
+
+
+footer {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: arial;
+    font-size: 13px;
+    width: 30%;
+    text-align: right;
+    width: 100%;
+    padding-bottom: 20px;
+    position: relative;
+    bottom: 60px;
+
+}
+
+
+
+
+

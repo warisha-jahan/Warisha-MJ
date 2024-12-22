@@ -1,0 +1,307 @@
+@media only screen and (max-width:750px) {
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        overflow-y: scroll;
+
+
+    }
+
+    body {
+        background-color: black;
+    }
+
+    header{
+        justify-content: space-around;
+    }
+
+   
+
+
+
+    .main_page {
+        background: linear-gradient(160deg, rgba(9, 8, 8, 0.555), rgba(0, 0, 0, 0.353)), url("photos/bg.jpg") no-repeat left center/cover;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .humberger {
+        display: flex;
+    }
+
+
+
+
+
+    .logo {
+        font-size: 17px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    .logo:hover {
+        font-size: 22px;
+    }
+
+    nav {
+        display: none;
+    }
+
+
+
+    .main_content {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        padding: 60px;
+        position: relative;
+        animation: b-t 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+
+    }
+
+    .main_content h2 {
+        font-size: 40px;
+        animation: b-t 1s cubic-bezier(0.39, 0.575, 0.565, 1) 1;
+
+    }
+
+    .main_content h5 {
+        font-size: 20px;
+
+        text-align: center;
+    }
+
+
+
+    /* About Page  */
+
+
+    .biography_section {
+        flex-direction: column;
+        margin-top: 30%;
+
+    }
+
+    .about_content {
+        padding: 20px;
+        width: 100%;
+
+
+    }
+
+
+    .about_image img {
+        height: 300px;
+        width: 340px;
+        animation: hChanges 0.5s ease-in-out;
+        border-radius: 10px 50px 30px 50px;
+
+    }
+
+    .about_content h2 {
+        text-align: center;
+    }
+
+    .about_content p {
+        font-size: 14px;
+        text-align: justify;
+        padding: 20px;
+    }
+
+
+
+
+
+
+    /* Portfolio Page */
+
+    .portfolio {
+        margin-top: 25%;
+    }
+
+    .portfolio_sections {
+        flex-direction: column;
+    }
+
+    .portfolio_sections .section {
+        border: 2px solid white;
+        height: 250px;
+        width: 250px;
+    }
+
+
+    .portfolio h2 {
+        font-size: 25px;
+    }
+
+
+
+
+
+    /* Contact Page */
+
+    /* .contact_section{
+        flex-direction: column;
+    } */
+
+    .contact_form {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: relative;
+        animation: opacity 1.2s ease-in-out;
+        font-size: 10px;
+        padding: 10px;
+        margin-bottom: 50%;
+    }
+
+    .contact_section {
+        flex-direction: column;
+        margin-top: 20%;
+    }
+
+    .contact_content {
+
+        padding: 20px;
+        width: auto;
+        position: relative;
+        animation: Bottom_Top 0.6s ease;
+
+    }
+
+    .contact_content h2 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .contact_content address {
+        font-family: 20px;
+        text-align: center;
+
+    }
+
+    .contact_content p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    textarea {
+
+        height: 30px;
+    }
+
+
+
+
+
+
+
+
+
+    footer {
+        background-color: transparent;
+        color: rgb(255, 255, 255);
+        font-family: arial;
+        font-size: 13px;
+        text-align: center;
+        width: 100%;
+        position: auto;
+        bottom: -10px;
+        height: auto;
+        z-index: 1;
+
+
+    }
+
+    footer p {
+        font-size: 11px;
+        padding: 10px 60px;
+
+    }
+
+
+
+
+    /* Responsive Menu */
+
+    .responsive_menu {
+        display: flex;
+        height: 0;
+        background-color: orange;
+        width: 100%;
+        z-index: 1;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height 0.3s ease-in-out;
+    }
+
+    .responsive_menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+        font-size: 17px;
+        border-bottom: 1px solid white;
+    }
+
+    .responsive_menu a:hover {
+        border-bottom: 7px solid white;
+    }
+
+
+
+
+
+
+
+    .humberger {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .humberger span {
+        background-color: white;
+        width: 24px;
+        height: 2px;
+        margin: 2px 0px;
+    }
+
+
+
+    /* Adding Toggle Logic */
+
+    .responsive_menu.menu-open {
+        height: 100vh;
+    }
+
+    .humberger.close-icon span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+
+    }
+
+    .humberger.close-icon span:nth-child(2) {
+        opacity: 0;
+
+    }
+
+    .humberger.close-icon span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+
+    }
+
+
+
+}

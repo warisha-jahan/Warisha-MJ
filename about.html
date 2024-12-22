@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warisha MJ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+</head>
+<style>
+    .Page {
+        background-color: black;
+        height: 100vh;
+
+
+
+    }
+
+    @media only screen and (max-width:750px) {
+
+        .Page {
+            background-color: black;
+            height: auto;
+            padding-bottom: 160px;
+
+
+        }
+    }
+
+
+    span {
+        color: orange;
+    }
+
+    /* footer {
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        font-family: arial;
+        font-size: 13px;
+        width: 30%;
+        text-align: right;
+        width: 100%;
+        padding: 10px 20px;
+
+
+    } */
+</style>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="index.html">
+                <div class="logo">Warisha MJ</div>
+            </a>
+            <div class="humberger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="navigation">
+                <nav>
+                    <a href="about.html">About</a>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+                <div class="icons">
+                    <a href="https://www.tiktok.com/@warishajahanzaib?is_from_webapp=1&sender_device=pc"><img
+                            src="photos/tik-tok.png" class="icon"></a>
+                    <a href=""><img src="photos/instagram.png" class="icon"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <section class="Page">
+        <div class="responsive_menu">
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="biography_section">
+            <div class="about_content">
+                <h2>About <span>Me</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae cum beatae aperiam earum
+                    necessitatibus ab, a quos quas atque deserunt totam maxime commodi sapiente porro officiis!
+                    Itaque
+                    alias consectetur optio magnam minus quaerat possimus, quibusdam doloribus excepturi inventore
+                    nesciunt enim, quas, nemo ea. Dolorum dignissimos quisquam repellat facilis aperiam in id? Ab,
+                    rem
+                    delectus in atque sint quasi at omnis saepe beatae consectetur praesentium repellat earum
+                    aperiam
+                    quia obcaecati vel iusto, itaque ea. Enim eveniet consequuntur a debitis mollitia quod
+                    aspernatur
+                    quaerat amet veniam tenetur, quam vitae recusandae sapiente quo eos voluptate pariatur assumenda
+                    in
+                    iure earum omnis? Natus, iste illum. Ullam, neque! Placeat quis quae a harum optio sunt unde
+                    quos
+                    corporis commodi culpa sit et tempora veritatis soluta assumenda, possimus qui aliquam! Velit et
+                    odio officiis, ea enim quasi aliquam fuga sapiente ipsum, iure nesciunt at rerum modi!</p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam debitis unde tenetur ipsum facilis
+                    vero dolor dolorum ad neque quidem provident cum, perferendis hic itaque! Rem sit dolor,
+                    voluptas
+                    ducimus qui nisi ipsa maiores dignissimos ad ullam quisquam deleniti quasi velit minima tenetur
+                    dicta adipisci numquam saepe, beatae illo excepturi reiciendis autem veritatis. Debitis modi
+                    sint
+                    omnis, unde, maiores, incidunt eligendi ratione ex alias rerum velit quis consectetur autem
+                    reprehenderit nesciunt est at. Officia sed velit distinctio sapiente repudiandae vero?
+                </p>
+            </div>
+
+            <div class="about_image">
+                <img src="photos/about.jpg">
+            </div>
+        </div>
+
+
+
+    </section>
+    </div>
+    <footer>
+        <p>Copyright By Warisha MJ . All Right Reserved Designed By Warisha</p>
+    </footer>
+    <script>
+        // Select elements
+        const humberger = document.querySelector('.humberger');
+        const responsiveMenu = document.querySelector('.responsive_menu');
+
+        // Event listener for click on humberger
+        humberger.addEventListener('click', () => {
+            // Toggle the responsive_menu visibility
+            responsiveMenu.classList.toggle('menu-open');
+
+            // Toggle the humberger to close icon
+            humberger.classList.toggle('close-icon');
+        });
+
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
